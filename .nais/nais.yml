@@ -30,8 +30,6 @@ spec:
     requests:
       cpu: 200m
       memory: 256Mi
-  ingresses:
-    - {{ingress}}
 
   accessPolicy:
     outbound:

@@ -31,7 +31,6 @@ jobs:
         APIKEY: "${{ secrets.NAIS_DEPLOY_APIKEY }}"
         CLUSTER: dev-fss
         RESOURCE: .nais/nais.yml
-        VARS: .nais/dev.yml
   # deployAppToProd:
   #   name: Deploy app to prod-fss
   #   needs: deployAppToDev
@@ -44,4 +43,3 @@ jobs:
   #       APIKEY: "${{ secrets.NAIS_DEPLOY_APIKEY }}"
   #       CLUSTER: prod-fss
   #       RESOURCE: .nais/nais.yml
-  #       VARS: .nais/prod.yml
