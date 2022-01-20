@@ -30,6 +30,8 @@ spec:
     requests:
       cpu: 200m
       memory: 256Mi
+  ingresses:
+    - https://pam-samtykke-api-tokenx-proxy.dev.intern.nav.no
 
   accessPolicy:
     outbound:
