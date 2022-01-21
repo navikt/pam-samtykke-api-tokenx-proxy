@@ -6,6 +6,9 @@ without the use of API gateway.
 (We cannot expose the entire pam-samtykke-api directly in GCP, because only a
 subset of its endpoints meet the tokenx security requirements.)
 
+It only forwards request with path prefix `/tokenx`, and for those it targets
+path `/pam-samtykke-api/tokenx` on `pam-samtykke-api`.
+
 ## Reachability
 
 Ingresses for this app are setup externally in:
