@@ -32,16 +32,16 @@ jobs:
         CLUSTER: dev-fss
         RESOURCE: .nais/nais.yml
         VARS: .nais/dev.yml
-  # deployAppToProd:
-  #   name: Deploy app to prod-fss
-  #   needs: deployAppToDev
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - name: Deploy to prod-fss
-  #     uses: nais/deploy/actions/deploy@v1
-  #     env:
-  #       APIKEY: "${{ secrets.NAIS_DEPLOY_APIKEY }}"
-  #       CLUSTER: prod-fss
-  #       RESOURCE: .nais/nais.yml
-  #       VARS: .nais/prod.yml
+  deployAppToProd:
+    name: Deploy app to prod-fss
+    needs: deployAppToDev
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy to prod-fss
+      uses: nais/deploy/actions/deploy@v1
+      env:
+        APIKEY: "${{ secrets.NAIS_DEPLOY_APIKEY }}"
+        CLUSTER: prod-fss
+        RESOURCE: .nais/nais.yml
+        VARS: .nais/prod.yml
