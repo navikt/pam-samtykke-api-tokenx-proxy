@@ -2,7 +2,7 @@ name: Build and deploy
 on:
   push:
     branches:
-    - main
+    - INGEN_HER_JAFFAL
 env:
   "IMAGE": "ghcr.io/${{ github.repository }}:${{ github.sha }}"
 jobs:

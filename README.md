@@ -1,3 +1,7 @@
+
+# DENNE APPLIKASJONEN ER ARKIVERT
+pam-samtykke-api har flyttet til GCP, og vi trenger ikke lenger en tokenx-proxy
+
 # nginx proxy-app that forwards all /tokenx/*-reqs to pam-samtykke-api
 
 This app makes tokenx enabled endpoints in pam-samtykke-api reachable from GCP
